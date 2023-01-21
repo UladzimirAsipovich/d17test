@@ -1,0 +1,109 @@
+.button {
+  @apply inline-flex items-center justify-center mr-4 transition-all border rounded-lg last:mr-0 hover:shadow-md font-montserrat;
+}
+.div > *,
+.button * {
+  @apply w-full text-center;
+}
+
+.button span {
+  @apply shrink-0 grow;
+}
+
+.button svg {
+  @apply w-5 fill-sky-500;
+}
+
+.button:disabled {
+  @apply text-gray-400 !bg-gray-200 cursor-not-allowed hover:shadow-none;
+}
+
+.div {
+  @apply transition-all;
+}
+
+.div > a {
+  @apply inline-block;
+}
+
+.primary {
+  @apply text-white bg-teal-400 hover:bg-teal-500;
+}
+
+.primary.secondary {
+  @apply text-teal-600 bg-teal-200 hover:bg-teal-300;
+}
+
+.success {
+  @apply text-white bg-green-400 hover:bg-green-500;
+}
+
+.success.secondary {
+  @apply text-green-600 bg-green-200 hover:bg-green-300;
+}
+
+.info {
+  /* @apply text-white bg-sky-400 hover:bg-sky-500; */
+  @apply text-white bg-dm-bg-btn-clr hover:bg-sky-500;
+}
+
+.info.outlineReverse {
+  @apply text-white bg-transparent border-sky-500 hover:bg-sky-400;
+}
+
+.info.secondary {
+  @apply bg-sky-200 hover:bg-sky-300 text-sky-600;
+}
+
+.warn {
+  @apply text-gray-800 bg-yellow-300 hover:bg-yellow-400;
+}
+
+.warn.secondary {
+  @apply text-yellow-500 bg-yellow-100 hover:bg-yellow-200;
+}
+
+.danger {
+  @apply text-white bg-red-500 hover:bg-red-600;
+}
+
+.danger.outline {
+  @apply text-white bg-red-600 border border-red-700 hover:bg-transparent;
+}
+
+.danger.outlineReverse {
+  @apply text-white bg-transparent border border-red-700 hover:bg-red-600;
+}
+
+.danger.secondary {
+  @apply text-red-600 bg-red-200 hover:bg-red-300;
+}
+
+.basic {
+  @apply text-neutral-400 hover:text-neutral-200;
+}
+
+.div.xs > a,
+.button.xs {
+  @apply px-2 py-1 text-xs;
+}
+
+.div.sm > a,
+.button.sm {
+  @apply px-3 py-1 text-sm;
+}
+
+.div.md > a,
+.button.md {
+  @apply px-4 py-2;
+}
+
+.div.lg > a,
+.button.lg {
+  @apply px-5 py-3 text-lg;
+}
+
+.div.xl > a,
+.button.xl {
+  @apply px-6 py-4 text-xl;
+}
